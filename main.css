@@ -7,5 +7,6 @@
 }
 
 .box{
-    border: black solid 1px;
+    border: black dotted 1px;
+    background-color: white;
 }
