@@ -1,3 +1,13 @@
+btn = document.querySelector('#gridSizeButton')
+btn.addEventListener('click',changeGridSize);
+makeGrid(5);
+
+function changeGridSize()
+{
+    let n = +prompt("Enter new grid side length");
+    makeGrid(n);
+}
+
 function makeGrid(side)
 {
     grid = document.querySelector('#grid');
@@ -21,5 +31,8 @@ function makeGrid(side)
 
 function changeColor(box)
 {
-    box.style.backgroundColor = 'black';
+    let r = Math.random() * 255;
+    let g = Math.random() * 255;
+    let b = Math.random() * 255;
+    box.style.backgroundColor = `rgb(${r},${g},${b})`;
 }
