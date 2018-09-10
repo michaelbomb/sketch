@@ -1,0 +1,11 @@
+#grid{
+    display: grid;
+    width: 600px;
+    height: 600px;
+    border: solid 2px blue;
+    text-align: center;
+}
+
+.box{
+    border: black solid 1px;
+}
